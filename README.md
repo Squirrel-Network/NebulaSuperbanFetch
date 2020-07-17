@@ -2,7 +2,7 @@
 Simple example of fetching super banned from the Nebula bot in the last 10 days
 
 <p align="center">
-<img src="https://i.imgur.com/ZhbBkcV.png" alt="Smiley face" height="500" width="1000">
+<img src="https://i.imgur.com/ZhbBkcV.png" alt="Smiley face" height="500" width="1200">
 </p>
 
 [![Group](https://img.shields.io/badge/Group-SquirrelNetwork-blue)](https://t.me/squirrelnetwork)
