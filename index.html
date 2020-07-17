@@ -1,0 +1,72 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Nebula SuperBan Table</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+          crossorigin="anonymous">
+
+</head>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Nebula Superban Table</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </div>
+    </div>
+</nav>
+<br>
+<body>
+
+
+<div id="DivSuperBan" class="container">
+
+
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">
+                UserId
+            </th>
+            <th scope="col">
+                Motivation
+            </th>
+            <th scope="col">
+                Date
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr v-for="d in user_id">
+            <td>
+                {{d.user_id}}
+            </td>
+            <td>
+                {{d.motivation_text}}
+            </td>
+            <td>
+                {{d.user_date}}
+            </td>
+
+        </tr>
+
+        </tbody>
+    </table>
+</div>
+<!-- production version, optimized for size and speed -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+<!--Axios Script-->
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
