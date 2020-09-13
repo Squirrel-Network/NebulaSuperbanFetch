@@ -24,8 +24,8 @@ try{
     $result = [];
 
     //Query SQL
-    $stmt = $conn->query("SELECT user_id,motivation_text,user_date 
-                                   FROM ban_table
+    $stmt = $conn->query("SELECT user_id,motivation_text,user_date,id_operator 
+                                   FROM superban_table
                                    WHERE user_date BETWEEN DATE_SUB(NOW(), INTERVAL 10 DAY) AND NOW()
                                    ORDER BY user_id ASC;");
 
